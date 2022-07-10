@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -15,20 +16,20 @@
       <!-- owl carousel style -->
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'styles/css/bootstrap.min.css' %}">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="{% static 'styles/css/style.css' %}">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="{% static 'styles/css/responsive.css' %}">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="{% static 'styles/images/fevicon.png' %}" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="{% static 'styles/css/jquery.mCustomScrollbar.min.css' %}">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="{% static 'styles/css/owl.carousel.min.css' %}">
+      <link rel="stylesheet" href="{% static 'styles/css/owl.theme.default.min.css' %}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
    <body>
@@ -36,12 +37,12 @@
       <div class="header_section">
          <div class="container">
             <nav class="navbar navbar-dark bg-dark">
-               <a class="logo" href="index.html"><img src="images/logo.png"></a>
+               <a class="logo" href="index.html"><img src="{% static 'styles/images/logo.png' %}"></a>
                <div class="search_section">
                   <ul>
                      <li><a href="#">Log In</a></li>
-                     <li><a href="#"><img src="images/shopping-bag.png"></a></li>
-                     <li><a href="#"><img src="images/search-icon.png"></a></li>
+                     <li><a href="#"><img src="{% static 'styles/images/shopping-bag.png' %}"></a></li>
+                     <li><a href="#"><img src="{% static 'styles/images/search-icon.png' %}"></a></li>
                   </ul>
                </div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,10 +80,10 @@
                      <h1 class="feature_taital">what is says our customer</h1>
                      <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
                      <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/img-9.png' %}"></div>
                         <h3 class="nolmal_text">Normal distribution</h3>
                         <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/icon-10.png' %}"></div>
                      </div>
                   </div>
                </div>
@@ -91,10 +92,10 @@
                      <h1 class="feature_taital">FEATURED PRODUCTS</h1>
                      <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
                      <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/img-9.png' %}"></div>
                         <h3 class="nolmal_text">Normal distribution</h3>
                         <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/icon-10.png' %}"></div>
                      </div>
                   </div>
                </div>
@@ -103,19 +104,19 @@
                      <h1 class="feature_taital">FEATURED PRODUCTS</h1>
                      <p class="feature_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking</p>
                      <div class="client_section_2">
-                        <div class="image_9"><img src="images/img-9.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/img-9.png' %}"></div>
                         <h3 class="nolmal_text">Normal distribution</h3>
                         <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look</p>
-                        <div class="image_9"><img src="images/icon-10.png"></div>
+                        <div class="image_9"><img src="{% static 'styles/images/icon-10.png' %}"></div>
                      </div>
                   </div>
                </div>
             </div>
             <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class=""><img src="images/left-icon.png"></i>
+            <i class=""><img src="{% static 'styles/images/left-icon.png' %}"></i>
             </a>
             <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class=""><img src="images/right-icon.png"></i>
+            <i class=""><img src="{% static 'styles/images/right-icon.png' %}"></i>
             </a>
          </div>
       </div>
@@ -142,10 +143,10 @@
                      <p class="call_text"><a href="#">demo@gmail.com</a></p>
                      <div class="social_icon">
                         <ul>
-                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                           <li><a href="#"><img src="{% static 'styles/images/fb-icon.png' %}"></a></li>
+                           <li><a href="#"><img src="{% static 'styles/images/twitter-icon.png' %}"></a></li>
+                           <li><a href="#"><img src="{% static 'styles/images/linkedin-icon.png' %}"></a></li>
+                           <li><a href="#"><img src="{% static 'styles/images/instagram-icon.png' %}"></a></li>
                         </ul>
                      </div>
                   </div>
@@ -159,16 +160,16 @@
       </div>
       <!-- footer section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="{% static 'styles/js/jquery.min.js' %}"></script>
+      <script src="{% static 'styles/js/popper.min.js' %}"></script>
+      <script src="{% static 'styles/js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'styles/js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'styles/js/plugin.js' %}"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="{% static 'styles/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'styles/js/custom.js' %}"></script>
       <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
+      <script src="{% static 'styles/js/owl.carousel.js' %}"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
       <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
