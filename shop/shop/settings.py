@@ -30,7 +30,6 @@ SECRET_KEY = os.getenv("secret_key_django")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'http://djangoshop-env.eba-bkiqapqf.eu-central-1.elasticbeanstalk.com/', # AWS Elastic Beanstalk setup requirement
     '127.0.0.1', #local host added to be able to work on website
 
 ]
