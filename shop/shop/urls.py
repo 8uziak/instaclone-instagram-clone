@@ -22,9 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webapp.urls')),
     ## USER PATHS 
-    path('', include('webapp.urls')),
-    path('login/', views.Login, name ='login'),
-    path('logout/', auth.LogoutView.as_view(template_name ='webapp/index.html'), name ='logout'),
-    path('register/', views.register, name ='register'),
-
+    ## path('login/', views.Login, name ='login'),
+    ## path('logout/', auth.LogoutView.as_view(template_name ='webapp/index.html'), name ='logout'),
+    ## path('register/', views.register, name ='register'),
+    
 ]

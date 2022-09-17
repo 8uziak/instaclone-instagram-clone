@@ -27,6 +27,12 @@ def clients(request):
 def contact(request):
     return render(request, 'contact.html',{})
 
+def login(request):
+    return render(request, 'login.html',{})
+
+
+'''   
+
 # register
 def register(request):
     if request.method == 'POST':
@@ -67,3 +73,5 @@ def Login(request):
             messages.info(request, f'account done not exit plz sign in')
     form = AuthenticationForm()
     return render(request, 'user/login.html', {'form':form, 'title':'log in'})
+    
+'''
