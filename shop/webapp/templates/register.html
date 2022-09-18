@@ -37,7 +37,7 @@
       <div class="header_section">
          <div class="container">
             <nav class="navbar navbar-dark bg-dark">
-               <a class="logo" href="index.html"><img src="{% static 'styles/images/logo.png' %}"></a>
+               <a class="logo" href="index"><img src="{% static 'styles/images/logo.png' %}"></a>
                <div class="search_section">
                   <ul>
                      <li><a href="login">Log In</a></li>
@@ -72,23 +72,24 @@
       </div>
       <!--header section end -->
       <!-- contact section start -->
-      {% block content %}      
+    
+      {% block content %} 
 
-      {% load crispy_forms_tags %}
-
-      <!--Login--> 
-      <div class="container py-5">
-      <h1>Login</h1>
-      <form method="POST">
-         {% csrf_token %}
-         {{ login_form|crispy }}
-         <button class="btn btn-primary" type="submit">Login</button>
-      </form>
-      <p class="text-center">Don't have an account? <a href="/register">Create an account</a>.</p>
-      </div>
-
-      {% endblock %}
+      {% load crispy_forms_tags %}         
       
+      <!--Register--> 
+      <div class="container py-5">
+         <h1>Register</h1>
+         <form method="POST">
+            {% csrf_token %}
+            {{ register_form|crispy }}                    
+            <button class="btn btn-primary" type="submit">Register</button>
+         </form>
+         <p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+      </div>
+      
+      {% endblock %}
+
       <!-- contact section end -->
       <!-- footer section start -->
       <div class="footer_section layout_padding">
