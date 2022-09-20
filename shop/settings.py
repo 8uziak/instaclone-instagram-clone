@@ -14,6 +14,7 @@ from pathlib import Path
 from pickle import TRUE
 from dotenv import load_dotenv
 import os
+import dj_database_url
 
 load_dotenv()
 
@@ -35,6 +36,7 @@ ALLOWED_HOSTS = [
     '*'
 ]
 
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 # Application definition
 
@@ -58,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'shop.urls'
@@ -85,10 +88,7 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
 }
 
 
@@ -126,15 +126,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'static/styles'),
-    os.path.join(BASE_DIR, 'static/styles/css'),
-    os.path.join(BASE_DIR, 'static/styles/favicon'),
-    os.path.join(BASE_DIR, 'static/styles/images'),
-    os.path.join(BASE_DIR, 'static/styles/js'),
 ]
 
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
