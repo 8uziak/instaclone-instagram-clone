@@ -32,6 +32,7 @@ SECRET_KEY = os.getenv("secret_key_django")
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    #'127.0.0.1', local host added to be able to work on website
     '*',
 ]
 
